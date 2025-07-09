@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="icon" href="icon.png" type="image/png">
-    <title>Feiticeiro</title>
+    <title>Velvet Nocturne</title>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -12,10 +12,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="mago.css">
+    <link rel="stylesheet" href="baal.css">
 </head>
 <body>
-  <!-- Navbar -->
+   <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top">
         <a class="navbar-brand" href="index.html">Ecos de Sofrimento</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,32 +31,69 @@
         </div>
     </nav>
 
-
     <div class="main-container">
         <!-- Bookmarks -->
         <div class="bookmarks">
-            <a href="Amelia.html" class="bookmark lilac" title="Amélia"></a>
-            <a href="Baal.html" class="bookmark red" title="Baal"></a>
-            <a href="Angy.html" class="bookmark turquoise" title="Ângela"></a>
-            <a href="Mago.html" class="bookmark dark-blue" title="Feiticeiro"></a>
-        </div>
+          <a href="Amelia.html" class="bookmark lilac" title="Amélia"></a>
+          <a href="Baal.html" class="bookmark red" title="Baal"></a>
+          <a href="Angy.html" class="bookmark turquoise" title="Angy"></a>
+          <a href="Mago.html" class="bookmark dark-blue" title="Mago"></a>
+      </div>
         
         <!-- Conteúdo do livro (carta branca) -->
         <div class="letter-container">
-            <h2 class="letter-title">Feiticeiro</h2>
+            <h2 class="letter-title">Baal</h2>
             
             <div class="letter-content">
-                <p>Poucos conhecem seu nome verdadeiro — e os que o souberam, já não vivem para contar a história. Ele é conhecido apenas como o Feiticeiro.</p>
+                <p>Baal é um homem de origem incerta, bem falante, que expela elegância e postura. Cada gesto, cada palavra e cada olhar fazem parte de um personagem que ele criou para se adaptar e conquistar. Não se sabe exatamente de onde veio, nem o que fazia antes de aparecer na aldeia — mas isso não é por acaso. Baal apaga vestígios. Apresenta-se sempre como alguém novo, educado, culto, prestável. Ganha confiança com facilidade.</p>
 
-                <p>Costuma viver isolado, longe de qualquer olhar curioso. Ninguém sabe de onde veio, nem há registros que revelem sua origem. Diz-se que já foi um homem comum, talvez um eremita, talvez um estudioso, mas algo se perdeu nele quando tentou compreender o que não devia. Outros afirmam que nasceu do próprio bosque, moldado pela Terra-Mãe, com um propósito sagrado: purificar este mundo.</p>
+                <p>Mas tudo nele é fachada. Ele estuda o ambiente onde entra e identifica rapidamente quem é vulnerável, quem pode ser manipulado, e quem precisa de uma ilusão para se sentir seguro. É nesse ponto frágil que ele se instala.</p>
 
-                <p>Ele conhece Baal. Não no sentido social, mas no mais profundo e essencial. Reconhece nele algo antigo, familiar e perigosamente imortal.</p>
+                <p>Com todos, mantém o mesmo sorriso, o mesmo olhar calmo. Nunca se zanga. Nunca se apressa. Porque sabe que o poder dele não vem da força — mas sim do controlo.</p>
 
-                <p>As plantas escutam suas palavras, e o vento se transforma com o simples ato de sua respiração. Ele não é apenas um homem; ele é a personificação da Mãe Natureza em sua forma mais pura e selvagem.</p>
+                <p>Baal tem uma necessidade quase doentia de domínio emocional. Não lhe chega que confiem nele. Ele quer que dependam dele, que o vejam como indispensável, como a única âncora em terra firme. Isso é o que lhe dá prazer. A manipulação não é um meio para um fim — é o fim.</p>
+
+                <p>Embora pareça agir sozinho, há sinais de que já tenha feito isto antes. A forma como constrói narrativas sobre o seu passado, como planta pequenas sementes de dúvida ou de empatia nos outros, indica prática, método, e talvez uma longa história de destruição discreta. Ele não impõe medo de imediato — primeiro, oferece conforto. E é isso que o torna perigoso.</p>
+
+                <p>Onde será que estão as suas outras vítimas?</p>
             </div>
         </div>
     </div>
-
+<!-- Adicione esta seção após a sinopse ou onde desejar no seu HTML -->
+<section class="gallery-section py-5">
+    <div class="d-flex justify-content-center">
+        <div class="synopsis" style="max-width: 1200px;">
+            <h3>Galeria de Imagens</h3>
+            <div class="highlight">
+                <div class="gallery-container">
+                    <!-- As imagens serão geradas dinamicamente via JavaScript -->
+                    <div class="gallery-grid" id="galleryGrid"></div>
+                    
+                    <!-- Modal para imagem expandida -->
+                    <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                            <div class="modal-content bg-dark border border-secondary">
+                                <div class="modal-header border-0">
+                                    <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body text-center">
+                                    <img id="expandedImage" class="img-fluid" src="" alt="Imagem expandida">
+                                </div>
+                                <div class="modal-footer border-0 justify-content-between">
+                                    <button class="btn btn-pap" id="prevBtn">&larr; Anterior</button>
+                                    <span id="imageCounter" class="text-light"></span>
+                                    <button class="btn btn-pap" id="nextBtn">Próxima &rarr;</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
     <footer>
         <div class="footer-content">
             <p>&copy; 2024/2025 Ecos de Sofrimento.</p>
@@ -95,5 +132,80 @@
             });
         });
     </script>
+    <script>
+// Galeria de Imagens
+document.addEventListener('DOMContentLoaded', function() {
+    const galleryGrid = document.getElementById('galleryGrid');
+    const totalImages = 71; // De lia1.png até lia71.png
+    
+    // Criar itens da galeria
+    for (let i = 1; i <= totalImages; i++) {
+        const imgPath = `lia${i}.jpg`;
+        const galleryItem = document.createElement('div');
+        galleryItem.className = 'gallery-item';
+        galleryItem.dataset.index = i;
+        
+        const img = document.createElement('img');
+        img.src = imgPath;
+        img.alt = `Imagem ${i}`;
+        img.loading = 'lazy';
+        
+        galleryItem.appendChild(img);
+        galleryGrid.appendChild(galleryItem);
+        
+        // Adicionar evento de clique
+        galleryItem.addEventListener('click', function() {
+            openModal(i);
+        });
+    }
+    
+    // Modal functions
+    let currentModalIndex = 1;
+    const imageModal = $('#imageModal');
+    const expandedImage = document.getElementById('expandedImage');
+    const imageCounter = document.getElementById('imageCounter');
+    
+    function openModal(index) {
+        currentModalIndex = parseInt(index);
+        updateModalImage();
+        imageModal.modal('show');
+    }
+    
+    function updateModalImage() {
+        expandedImage.src = `lia${currentModalIndex}.jpg`;
+        imageCounter.textContent = `${currentModalIndex} / ${totalImages}`;
+    }
+    
+    // Navigation buttons
+    document.getElementById('prevBtn').addEventListener('click', function() {
+        if (currentModalIndex > 1) {
+            currentModalIndex--;
+            updateModalImage();
+        }
+    });
+    
+    document.getElementById('nextBtn').addEventListener('click', function() {
+        if (currentModalIndex < totalImages) {
+            currentModalIndex++;
+            updateModalImage();
+        }
+    });
+    
+    // Keyboard navigation
+    document.addEventListener('keydown', function(e) {
+        if (!imageModal.hasClass('show')) return;
+        
+        if (e.key === 'ArrowLeft' && currentModalIndex > 1) {
+            currentModalIndex--;
+            updateModalImage();
+        } else if (e.key === 'ArrowRight' && currentModalIndex < totalImages) {
+            currentModalIndex++;
+            updateModalImage();
+        } else if (e.key === 'Escape') {
+            imageModal.modal('hide');
+        }
+    });
+});
+</script>
 </body>
 </html>
