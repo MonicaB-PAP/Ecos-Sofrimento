@@ -45,7 +45,7 @@
                 <source src="video2.mp4" type="video/mp4">
             </video>
             <video autoplay muted loop>
-                <source src="PAP-2temp.mp4" type="video/mp4">
+                <source src="PAP-temp2.mp4" type="video/mp4">
             </video>
         </div>
         <div class="banner-overlay">
@@ -124,7 +124,7 @@
                             <div class="character-glow baal-glow"></div>
                             <div class="card-body">
                                 <h5 class="card-title">Baal</h5>
-                                <a href="baal.css" class="btn btn-primary btn-block">
+                                <a href="Baal.html" class="btn btn-primary btn-block">
                                     <img src="icon-click.png" alt="Click" class="btn-icon">
                                 </a>
                             </div>
@@ -136,7 +136,7 @@
                             <div class="character-glow angela-glow"></div>
                             <div class="card-body">
                                 <h5 class="card-title">Angela</h5>
-                                <a href="angy.css" class="btn btn-primary btn-block">
+                                <a href="Angy.html" class="btn btn-primary btn-block">
                                     <img src="icon-click.png" alt="Click" class="btn-icon">
                                 </a>
                             </div>
@@ -148,24 +148,13 @@
                           <div class="character-glow mago-glow"></div>
                           <div class="card-body">
                               <h5 class="card-title">Feiticeiro</h5>
-                              <a href="mago.css" class="btn btn-primary btn-block">
+                              <a href="Mago.html" class="btn btn-primary btn-block">
                                   <img src="icon-click.png" alt="Click" class="btn-icon">
                               </a>
                           </div>
                       </div>
                     </div>
-                    <div class="carousel-item">
-                      <div class="character-card card bonnie">
-                          <img src="icon-bonnie.png" class="card-img-top" alt="Bonnie">
-                          <div class="character-glow bonnie-glow"></div>
-                          <div class="card-body">
-                              <h5 class="card-title">Bonnie</h5>
-                              <a href="bonnie.css" class="btn btn-primary btn-block">
-                                  <img src="icon-click.png" alt="Click" class="btn-icon">
-                              </a>
-                          </div>
-                      </div>
-                    </div>
+                   
                 </div>
                 <a class="carousel-control-prev" href="#characterCarousel" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -258,22 +247,7 @@
         });
     });
     </script>
-    <script>
-document.addEventListener('DOMContentLoaded', function() {
-    const videos = document.querySelectorAll('.video-container video');
-    let currentVideo = 0;
     
-    // Mostrar o primeiro vídeo
-    videos[currentVideo].classList.add('active');
-    
-    // Configurar o intervalo para trocar os vídeos
-    setInterval(() => {
-        videos[currentVideo].classList.remove('active');
-        currentVideo = (currentVideo + 1) % videos.length;
-        videos[currentVideo].classList.add('active');
-    }, 8000); // Muda a cada 8 segundos - ajuste conforme necessário
-});
-</script>
     
 </body>
 </html>
